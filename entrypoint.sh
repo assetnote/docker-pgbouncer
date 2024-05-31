@@ -82,6 +82,7 @@ ${AUTH_USER:+auth_user = ${AUTH_USER}\n}\
 ${AUTH_QUERY:+auth_query = ${AUTH_QUERY}\n}\
 ${POOL_MODE:+pool_mode = ${POOL_MODE}\n}\
 ${MAX_CLIENT_CONN:+max_client_conn = ${MAX_CLIENT_CONN}\n}\
+${POOL_SIZE:+pool_size = ${POOL_SIZE}\n}\
 ${DEFAULT_POOL_SIZE:+default_pool_size = ${DEFAULT_POOL_SIZE}\n}\
 ${MIN_POOL_SIZE:+min_pool_size = ${MIN_POOL_SIZE}\n}\
 ${RESERVE_POOL_SIZE:+reserve_pool_size = ${RESERVE_POOL_SIZE}\n}\
@@ -92,6 +93,7 @@ ${SERVER_ROUND_ROBIN:+server_round_robin = ${SERVER_ROUND_ROBIN}\n}\
 ignore_startup_parameters = ${IGNORE_STARTUP_PARAMETERS:-extra_float_digits}
 ${DISABLE_PQEXEC:+disable_pqexec = ${DISABLE_PQEXEC}\n}\
 ${APPLICATION_NAME_ADD_HOST:+application_name_add_host = ${APPLICATION_NAME_ADD_HOST}\n}\
+${TIMEZONE:+timezone = ${TIMEZONE}\n}\
 
 # Log settings
 ${LOG_CONNECTIONS:+log_connections = ${LOG_CONNECTIONS}\n}\
