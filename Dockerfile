@@ -1,5 +1,5 @@
-FROM alpine:3.17
-ARG VERSION=1.18.0
+FROM alpine:3.18
+ARG VERSION=1.22.1
 
 # Inspiration from https://github.com/gmr/alpine-pgbouncer/blob/master/Dockerfile
 # hadolint ignore=DL3003,DL3018
@@ -22,7 +22,7 @@ RUN \
   cp etc/pgbouncer.ini /etc/pgbouncer/pgbouncer.ini.example && \
   cp etc/userlist.txt /etc/pgbouncer/userlist.txt.example && \
   touch /etc/pgbouncer/userlist.txt && \
-  chown -R postgres /var/run/pgbouncer /etc/pgbouncer && \
+  chown -R postgres /var/log/pgbouncer /var/run/pgbouncer /etc/pgbouncer && \
   # Cleanup
   cd /tmp && \
   rm -rf /tmp/pgbouncer*  && \
